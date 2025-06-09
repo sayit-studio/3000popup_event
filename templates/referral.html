@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>推薦好友賺好禮</title>
+</head>
+<body>
+    <h2>🎁 推薦好友活動專區</h2>
+    <p>您的專屬推薦連結如下，請分享給好友，讓他們加入我們的 LINE 官方帳號：</p>
+
+    <input type="text" value="{{ share_link }}" readonly style="width: 90%; padding: 8px; font-size: 1rem;" id="shareLink">
+    <p>推薦人 ID：<strong>{{ user_id }}</strong></p>
+
+    <button onclick="copyLink()" style="padding: 10px 20px; font-size: 1rem;">📋 複製推薦連結</button>
+
+    <script>
+        function copyLink() {
+            const input = document.getElementById('shareLink');
+            input.select();
+            document.execCommand('copy');
+            alert('✅ 連結已複製！快分享給好友吧！');
+        }
+    </script>
+</body>
+</html>
