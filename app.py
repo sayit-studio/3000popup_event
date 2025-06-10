@@ -1,9 +1,9 @@
-from Flask import Flask, request, render_template
-import requests
+from flask import Flask, request, render_template  
 from datetime import datetime
 import os
 
 app = Flask(__name__)
+
 
 # === 設定 ===
 NOTION_TOKEN = os.environ.get("NOTION_TOKEN", "your_notion_token")  # 建議放到環境變數
