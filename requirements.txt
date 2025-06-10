@@ -1,2 +1,5 @@
 flask==2.3.2
 gunicorn
+flask
+notion-client
+python-dotenv
